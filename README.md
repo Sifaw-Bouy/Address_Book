@@ -22,6 +22,6 @@ checks to make sure the required flieds contain information, no empty name or ad
 The demo shows an example use case.
 
 # Demo
-https://www.youtube.com/watch?v=vTc96hOZr40
+https://www.youtube.com/watch?v=vTc96hOZr40&feature=youtu.be
 
 
