@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkChild"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAC459">
+
+    <ImageView
+        android:id="@+id/backToM2"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/first_name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="276dp"
+        android:text="@string/last_name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="328dp"
+        android:text="@string/address"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hapticFeedbackEnabled="false"
+        android:hint="firstname"
+        android:inputType="textPersonName"
+        android:shadowColor="#F6CFCF"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="lastname"
+        android:inputType="textPersonName"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="street name, city, state, ZIP"
+        android:inputType="textPostalAddress"
+        android:textColorLink="#040404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/sendToDatabase"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="164dp"
+        android:background="#05BFD6"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/childSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="20dp"
+        android:text="switch if this is a child"
+        app:layout_constraintBottom_toTopOf="@+id/addressInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textChview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="327dp"
+        android:text="Child of:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/parentName"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Parent name"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textChview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPrview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="328dp"
+        android:text="Parent of:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/relationName"
+        android:layout_width="208dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Child name"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textPrview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
