@@ -8,7 +8,9 @@ this included manual testing and creating simple test cases using JUint 4.
 To view the following app you need Android Studio and an emulator which can be installed at same time.If you have an 
 Android device you can simple plug it in via USB and make sure that developing mode is turned on.
 In the build gardle file it will show the minimum andoird SDK that this app will run on which is 21.
-Make sure that your computer has virtualization enabled in the BIOS.
+Make sure that your computer has virtualization enabled in the BIOS. 
+After this you can clone the project or copy the github link and go to the VCS tab in Android Studio 
+then click on "Get from version control" past the link and click on clone.
 # Use
 When you launch the application for the first time  it will have zero information. The Add button can be used
 to add new user information, when pressed it will take you the creation page where information can be added.
